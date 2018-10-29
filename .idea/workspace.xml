@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd29dd30-12d2-43d5-a707-4bd5dca55e5e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/Dogshop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/Dogshop/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/Dogshop/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/Dogshop/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/mall/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/mall/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/mall/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/mall/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/mall/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/mall/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/mall/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/css/jquery.idcode.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/css/商品.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/css/商品详情.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/css/注册.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/T1FXHXXahjXXXAK3zo-77-18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/bg_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/button_111.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/cart1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/dg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/diy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/giveup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/go.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gomoney.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gu0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gu1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gu2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gu3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gu4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/gwc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/hdP20160312144947839.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/hdP20160312150857107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/hdP20160313145249235.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/hdP20160313153110796.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/hot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/iqiangbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/li9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/loginsub.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/maxP20160312144947839.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/maxP20160312150857107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/maxP20160313145249235.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/maxP20160313153110796.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130112110730991.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130125140233185.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130125170822435.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130127143251661.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130128160238754.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130131100901989.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130424133451693.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130424142002630.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130427163130308.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130427172825901.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130428091631683.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP2013042810115373.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130428110620823.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130501143639745.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130505103859758.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130507110404305.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130604152951152.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20130815101406262.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160312144947839.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160312150857107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160312152807378.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP2016031314422891.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160313145249235.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160313150203420.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160313150744832.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160313152415166.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160313153110796.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316131539552.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316132640993.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316133300714.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316133759283.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316134241222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316135002531.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316135451288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316135827379.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160316140503105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160317184706766.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/midP20160317185139236.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/minP20160312144947839.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/minP20160312150857107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/minP2016031314422891.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/minP20160313145249235.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/minP20160313153110796.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201312061100260276.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201401211350199562.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201404011334302415.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201406071435494008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201603151537553117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201603161259330219.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201603161302213462.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/p201603212021240460.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/regbgs.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/shoppingcarbg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/sideNav_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/sxlrx_falsh41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/tg0591_falsh7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/wx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/zmgd888_falsh20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/zmgd888_falsh28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/zmgd888_falsh29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/zmgd888_falsh30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/zmgd888_falsh31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/zmgd888_falsh38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/zmgd888_falsh39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/img/验证码.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/js/jquery-3.1.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/js/jquery.cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/js/jquery.idcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/js/proxy.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/js/shouji.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/js/商品详情.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/json/iFocus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/json/miaosha.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/json/phone.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/static/json/shumalunbo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/templates/商品3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/templates/商品4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/templates/商品详情.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/templates/商品详情2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/templates/天狗商城.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/templates/我的购物车.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dogshop/templates/注册.html" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1455711104">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/天狗商城.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/主页.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1740">
+              <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img</find>
+      <find>regbgs</find>
+      <find>src</find>
+      <find>falsh</find>
+      <find>maxP</find>
+      <find>nav_msg</find>
+      <find>ma</find>
+      <find>max</find>
+      <find>p2</find>
+      <find>location.href</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dogshop/urls.py" />
+        <option value="$PROJECT_DIR$/dogshop/settings.py" />
+        <option value="$PROJECT_DIR$/static/js/test.js" />
+        <option value="$PROJECT_DIR$/mall/urls.py" />
+        <option value="$PROJECT_DIR$/templates/注册.html" />
+        <option value="$PROJECT_DIR$/templates/商品详情1.html" />
+        <option value="$PROJECT_DIR$/templates/商品详情2.html" />
+        <option value="$PROJECT_DIR$/templates/商品详情3.html" />
+        <option value="$PROJECT_DIR$/templates/商品详情4.html" />
+        <option value="$PROJECT_DIR$/mall/views.py" />
+        <option value="$PROJECT_DIR$/templates/我的购物车.html" />
+        <option value="$PROJECT_DIR$/static/js/主页.js" />
+        <option value="$PROJECT_DIR$/templates/天狗商城.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="194" />
+    <option name="y" value="23" />
+    <option name="width" value="950" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="dogshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dogshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dogshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dogshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dogshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dogshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dogshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dogshop" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="dogshop" type="Python.DjangoServer" factoryName="Django server">
+      <module name="dogshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd29dd30-12d2-43d5-a707-4bd5dca55e5e" name="Default" comment="" />
+      <created>1540737306947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540737306947</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1297" height="619" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13429257" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4980016" visible="true" weight="0.4417178" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5019984" side_tool="true" weight="0.32719836" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dogshop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/注册.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dogshop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/shumalunbo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/phone.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/iFocus.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/注册.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/miaosha.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/商品详情.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/商品详情2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="1519" column="38" selection-start-line="1519" selection-start-column="38" selection-end-line="1519" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/商品详情1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="1519" column="32" selection-start-line="1519" selection-start-column="25" selection-end-line="1519" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/商品详情3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/商品详情4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/我的购物车.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/主页.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/天狗商城.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
