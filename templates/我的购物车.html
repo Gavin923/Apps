@@ -18,9 +18,15 @@
 		<div id="header_top">
 			<div id="header">
 
-				<p id="p">您好：欢迎光临天狗商城！[
-					<a href="注册.html">请登录</a>]，新用户？[
-					<a href="注册.html">免费注册</a>]</p>
+				<p id="p">您好：欢迎光临天狗商城！
+                    {% if username %}
+                    <b>{{ username }}</b>
+                    <a href="{% url 'mall:logout' %}">退出</a>
+                    {% else %}
+					<a href="{% url 'mall:login' %}">请登录</a>，新用户？
+					<a href="{% url 'mall:login' %}">免费注册</a>
+                    {% endif %}
+                </p>
 
 				<div id="header_list">
 					<p id="p2">购物车<span class="num_first" style="color: red;">0</span>件</p>
@@ -37,7 +43,7 @@
 		<!--logo开始-->
 		<div id="logo">
 			<div id="logo_tu">
-				<a href=" 天狗商城.html" style="display:block;width:270px;height: 70px;"><img src="{% static 'img/p201401211350199562.jpg' %}"></a>
+				<a href="{% url 'mall:index' %}" style="display:block;width:270px;height: 70px;"><img src="{% static 'img/p201401211350199562.jpg' %}"></a>
 			</div>
 			<div id="search">
 				<div id="search_txt">
@@ -75,7 +81,7 @@
 			</div>
 			<ul id="nav_list">
 				<li>
-					<a href="天狗商城.html">首页</a>
+					<a href="//">首页</a>
 				</li>
 				<li>
 					<a href="#">手机数码</a>
@@ -1485,7 +1491,7 @@
 					<tbody>
 						<tr id="Tr">
 							<td colspan="6" style="text-align: center;padding: 25px 0;">你的购物车还是空的，赶紧行动吧！马上去
-								<a href="天狗商城.html" style="color: #ff0000;">挑选商品</a>
+								<a href="{% url 'mall:index' %}" style="color: #ff0000;">挑选商品</a>
 							</td>
 						</tr>
 					</tbody>
@@ -1506,7 +1512,7 @@
 						</tr>
 						<tr>
 							<th colspan="6" align="right">
-								<a href="天狗商城.html">
+								<a href="{% url 'mall:index' %}">
 									<img src="{% static 'img/gon.gif' %}">继续购物
 								</a>
 								<a href="#" class="money">

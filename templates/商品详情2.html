@@ -21,7 +21,9 @@
 					<a href="登录.html">免费注册</a>]</p>
 
 				<div id="header_list">
-					<p id="p2">购物车<span style="color: red;" class="num_first">0</span>件</p>
+					<a href="{% url 'mall:cart' %}">
+                        <p id="p2">购物车<span style="color: red;" class="num_first">0</span>件</p>
+                    </a>
 					<span><a href="#">我的订单</a></span>|
 					<span><a href="#">网站地图</a></span>|
 					<span><a href="#">帮助中心</a></span>|
@@ -34,7 +36,7 @@
 		<!--logo开始-->
 		<div id="logo">
 			<div id="logo_tu">
-				<a href=" 天狗商城.html" style="display:block;width:270px;height: 70px;"><img src="{% static 'img/p201401211350199562.jpg' %}"></a>
+				<a href="{% url 'mall:index' %}" style="display:block;width:270px;height: 70px;"><img src="{% static 'img/p201401211350199562.jpg' %}"></a>
 			</div>
 			<div id="search">
 				<div id="search_txt">
@@ -72,7 +74,7 @@
 			</div>
 			<ul id="nav_list">
 				<li>
-					<a href="天狗商城.html">首页</a>
+					<a href="{% url 'mall:index' %}">首页</a>
 				</li>
 				<li>
 					<a href="#">手机数码</a>

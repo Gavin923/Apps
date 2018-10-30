@@ -19,12 +19,20 @@
 		<div id="header_top">
 			<div id="header">
 
-				<p id="p">您好：欢迎光临天狗商城！[
-					<a href="注册.html">请登录</a>]，新用户？[
-					<a href="注册.html">免费注册</a>]</p>
+				<p id="p">您好：欢迎光临天狗商城！
+                    {% if username %}
+                    <b>{{ username }}</b>
+                    <a href="{% url 'mall:logout' %}">退出</a>
+                    {% else %}
+					<a href="{% url 'mall:login' %}">请登录</a>，新用户？
+					<a href="{% url 'mall:login' %}">免费注册</a>
+                    {% endif %}
+                </p>
 
 				<div id="header_list">
-					<p id="p2">购物车<span style="color: red;" class="num_first">0</span>件</p>
+                    <a href="{% url 'mall:cart' %}">
+                        <p id="p2">购物车<span style="color: red;" class="num_first">0</span>件</p>
+                    </a>
 					<span><a href="#">我的订单</a></span>|
 					<span><a href="#">网站地图</a></span>|
 					<span><a href="#">帮助中心</a></span>|
@@ -37,7 +45,7 @@
 		<!--logo开始-->
 		<div id="logo">
 			<div id="logo_tu">
-				<a href=" 天狗商城.html" style="display:block;width:270px;height: 70px;"><img src="{% static 'img/p201401211350199562.jpg' %}"></a>
+				<a href="{% url 'mall:index' %}" style="display:block;width:270px;height: 70px;"><img src="{% static 'img/p201401211350199562.jpg' %}"></a>
 			</div>
 			<div id="search">
 				<div id="search_txt">
@@ -75,7 +83,7 @@
 			</div>
 			<ul id="nav_list">
 				<li>
-					<a href="天狗商城.html">首页</a>
+					<a href="{% url 'mall:index' %}">首页</a>
 				</li>
 				<li>
 					<a href="#">手机数码</a>
@@ -1465,7 +1473,8 @@
 				</div>
 
 			</div>
-
+            <form action="{% url 'mall:register' %}" method="post">
+                {% csrf_token %}
 			<div id="nav2_reg">
 				<h1>新用户 ，请注册<b>（仅需30秒）</b></h1>
 				<dl>
@@ -1497,9 +1506,14 @@
 					<dt>
 {#						<input name="lognUp" type="submit" id="lognUp" value="" style="width: 106px;height: 30px;cursor: pointer;background: url(img/regbgs.gif);">#}
                         <input name="lognUp" type="submit" id="lognUp" value="" style="width: 106px;height: 30px;cursor: pointer;background: url({% static 'img/regbgs.gif' %});">
+                        <input type="submit" value="提交" id="mytest" >
 					</dt>
 				</dl>
 			</div>
+            </form>
+
+            <form action="{% url 'mall:login' %}" method="post">
+                {% csrf_token %}
 			<div id="nav2_login">
 				<h1>老用户，请登录</h1>
 				<dl>
@@ -1509,16 +1523,16 @@
 
 					</dd>
 					<dd>
-						<span>密码：</span><input name="username" type="text" id="pwd">
+						<span>密码：</span><input name="password" type="text" id="pwd">
 						<a href="#">忘记密码？</a>
 					</dd>
 					<dt>
-{#						<input name="login" id="login" type="submit" value="" style="width: 106px;height: 30px;cursor: pointer;background: url(img/loginsub.gif) no-repeat;">#}
                         <input name="login" id="login" type="submit" value="" style="width: 106px;height: 30px;cursor: pointer;background: url({% static 'img/loginsub.gif' %}) no-repeat;">
 					</dt>
 				</dl>
 
 			</div>
+            </form>
 		</div>
 
 		<!--footerbg开始-->

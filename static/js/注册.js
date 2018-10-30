@@ -1,6 +1,4 @@
 $(function() {
-	//同步购物车商品数量
-	var b = $.cookie("cart") ? JSON.parse($.cookie("cart")) : [];
 	$(".num_first").html(b.length);
 
 	$("#nav_feiLei").mouseenter(function() {
@@ -41,7 +39,6 @@ $(function() {
 	var ok4 = false;
 	var ok5 = false;
 
-	var users = $.cookie("users") ? JSON.parse($.cookie("users")) : [];
 
 	//输入邮箱
 	email.on({
@@ -162,25 +159,14 @@ $(function() {
 			console.log("验证码输入正确");
 			ok5 = true;
 		} else {
-			alert("验证码输入错误")
+			// alert("验证码输入错误")
 		}
 
-		//		 		console.log($.cookie("users")) 
 
 		if(ok1 && ok2 && ok3 && ok4 && ok5) {
-			var user = {
-				email: $("#email").val(),
-				name: $("#username").val(),
-				pwd: $("#pwd1").val()
-			};
-			users.push(user);
-			$.cookie("users", JSON.stringify(users), {
-				expires: 20,
-				path: "/"
-			});
-			alert("注册成功！");
+
 		} else {
-			return false;
+			// return false;
 		}
 
 	})
@@ -204,29 +190,6 @@ $(function() {
 		},
 		"blur": function() {
 			$(this).css("border-color", "");
-		}
-	})
-	$("#login").click(function() {
-		var username = $.cookie("users");
-		if(username) {
-			users = JSON.parse(username);
-			var isExit = false;
-			for(var i = 0; i < users.length; i++) {
-				if(users[i].name == name.val() && users[i].pwd == pwd.val()) {
-					alert("登陆成功")
-					location.href = "天狗商城.html";
-					isExit = true;
-					$.cookie("loginUser", users[i].name, {
-						expires: 20,
-						path: "/"
-					})
-				}
-			}
-			if(!isExit) {
-				alert("用户名和密码不一致，请重新输入");
-			}
-		} else {
-			alert("不存在该用户，请先注册");
 		}
 	})
 })

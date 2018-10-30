@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'dogshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dogshop',
+        'USER': 'root',
+        'PASSWORD': '92079320',
+        'HOST': '134.175.117.29',
+        'PORT': '3306',
     }
 }
 

@@ -1,24 +1,4 @@
 $(function() {
-	//同步用户名
-	var a = $.cookie("loginUser");
-	if(a) {
-		$("#p").html("您好：" + a + "用户！" + "<a class='exit'>退出</a>");
-	} else {
-		$("#p").html();
-	}
-	$(".exit").click(function() {
-		$(this).css("cursor", "pointer")
-		$.cookie("loginUser", "", {
-			expires: 20,
-			path: "/"
-		})
-		window.location.reload();
-	})
-	//同步购物车商品数量
-	var b = $.cookie("cart") ? JSON.parse($.cookie("cart")) : [];
-	$(".num_first").html(b.length);
-})
-$(function() {
 	$("#txt").focus(function() {
 		$(this).val("")
 	});
@@ -26,9 +6,7 @@ $(function() {
 		$(this).val("多搜搜，意外惊喜等你拿");
 	});
 
-	$("#p2").click(function() {
-		location.href = "/cart/";
-	})
+
 	var navLit = $(".navList");
 
 	navLit.mouseenter(function() {
@@ -114,7 +92,7 @@ $(function() {
 		var length = $(".shoping_phone a img").length;
 		console.log(length);
 		$(".shoping_phone a img").eq(0).click(function() {
-			location.href = "/showdetails";
+			location.href = "/showdetails/";
 		})
 		$(".shoping_phone a img").eq(1).click(function() {
 			location.href = "商品详情2.html";

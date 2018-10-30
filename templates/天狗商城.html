@@ -18,12 +18,20 @@
 		<div id="header_top">
 			<div id="header">
 
-				<p id="p">您好：欢迎光临天狗商城！[
-					<a href="{% url 'mall:login' %}">请登录</a>]，新用户？[
-					<a href="{% url 'mall:login' %}">免费注册</a>]</p>
+				<p id="p">您好：欢迎光临天狗商城！
+                    {% if username %}
+                    <b>{{ username }}</b>
+                    <a href="{% url 'mall:logout' %}">退出</a>
+                    {% else %}
+					<a href="{% url 'mall:login' %}">请登录</a>，新用户？
+					<a href="{% url 'mall:login' %}">免费注册</a>
+                    {% endif %}
+                </p>
 
 				<div id="header_list">
-					<p id="p2">购物车<span style="color: red;" class="num_first">0</span>件</p>
+					<a href="{% url 'mall:cart' %}">
+                        <p id="p2">购物车<span style="color: red;" class="num_first">0</span>件</p>
+                    </a>
 					<span><a href="#">我的订单</a></span>|
 					<span><a href="#">网站地图</a></span>|
 					<span><a href="#">帮助中心</a></span>|
