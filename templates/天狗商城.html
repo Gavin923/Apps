@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>天狗商城</title>
-		<link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/主页.css' %}" />
 		<script src="{% static 'js/jquery-3.1.0.js' %}"></script>
 		<script src="{% static 'js/jquery.cookie.js' %}"></script>
@@ -1507,7 +1507,7 @@
 		</div>
 
 		<!--导航栏2结束-->
-		<!--图片开始-->
+		<!--商标图片开始-->
 		<div id="smallImg">
 			<a href="#"><img src="{% static 'img/p201406071435494008.jpg' %}"></a>
 			<a href="#"><img src="{% static 'img/p201312061100260276.jpg' %}"></a>
@@ -1518,9 +1518,9 @@
 			<a href="#"><img src="{% static 'img/p201603212021240460.jpg' %}"></a>
 			<a href="#" id="smallImg_a">更多</a>
 		</div>
-		<!--图片结束-->
+		<!--商标图片结束-->
 
-		<!--商品开始-->
+		<!--秒杀商品开始-->
 		<div id="shoping">
 			<div id="shoping_left">
 				<ul id="shoping_tf">
@@ -1529,13 +1529,40 @@
 					<li>人气特卖</li>
 					<li>今日抢购</li>
 				</ul>
-
+{#                <dl class=shoping_phone>#}
+{#	                <dt>#}
+{#		                <a href="{% url 'mall:showdetails' %}">#}
+{#                            <img src="{% static 'img/midP20160313145249235.jpg' %}"/>#}
+{#                        </a>#}
+{#                    </dt>#}
+{#	                <dd class="phone_title">content</dd>#}
+{#	                <dd>#}
+{#                        score#}
+{#                        <span>price</span>#}
+{#                        <strong>mark</strong>#}
+{#                    </dd>#}
+{#	                <dd>miao</dd>#}
+{#                </dl>#}
+                <dl class=shoping_phone>
+	                <dt>
+		                <a href="{% url 'mall:showdetails' %}">
+                            <img src="{% static 'img/midP20160313145249235.jpg' %}"/>
+                        </a>
+                    </dt>
+	                <dd class="phone_title">三星S6 9208 金，金属边框&玻璃机身，0.7秒快速启动...</dd>
+	                <dd>
+                        抢购价格
+                        <span>￥3735</span>
+                        <strong>元</strong>
+                    </dd>
+	                <dd>秒杀已结束</dd>
+                </dl>
 			</div>
 			<div id="shoping_right">
 				<img src="{% static 'img/tg0591_falsh22.jpg' %}" style="width: 235px;height: 300px;">
 			</div>
 		</div>
-		<!--商品结束-->
+		<!--秒杀商品结束-->
 
 		<!--促销开始-->
 		<div id="sale">
@@ -1543,12 +1570,12 @@
 				<h1>会员促销 <span>Brand Promotions</span> </h1>
 			</div>
 			<div id="sale_bottom">
-				<img src="{% static 'img/tg0591_falsh11.jpg' %}">
-				<img src="{% static 'img/tg0591_falsh14.jpg' %}" style="width:237px ;height: 322px;">
-				<img src="{% static 'img/tg0591_falsh15.jpg' %}" style="position: absolute;top: 10px;right: 226px;">
-				<img src="{% static 'img/tg0591_falsh16.jpg' %}" style="width:236px ;height: 160px;position: absolute;top: 10px;right: 0;">
-				<img src="{% static 'img/tg0591_falsh13.jpg' %}">
-				<img src="{% static 'img/tg0591_falsh17.jpg' %}">
+				<img src="{% static 'img/tg0591_falsh11.jpg' %}" style="width:280px ;height: 310px;">
+				<img src="{% static 'img/tg0591_falsh14.jpg' %}" style="width:280px ;height: 310px;">
+				<img src="{% static 'img/tg0591_falsh15.jpg' %}" style="width:280px ;height: 150px;">
+				<img src="{% static 'img/tg0591_falsh16.jpg' %}" style="width:280px ;height: 150px;">
+				<img src="{% static 'img/tg0591_falsh13.jpg' %}" style="width:280px ;height: 150px;">
+				<img src="{% static 'img/tg0591_falsh17.jpg' %}" style="width:280px ;height: 150px;">
 			</div>
 		</div>
 		<!--促销结束-->
@@ -1575,30 +1602,11 @@
 
 		<!--手机数码结束-->
 
-		<!--礼品箱包开始-->
-		<div id="box">
-			<div id="box_top">
 
-				<h1>礼品箱包<span>Brand Promotions</span> </h1>
-				<div id="box_top_a">
-					<span><a href="#">潮流女包</a></span>
-					<span><a href="#">时尚男包</a></span>
-					<span><a href="#">功能箱包</a></span>
-					<span><a href="#">礼品</a></span>
-					<span><a href="#">奢侈品</a></span>
-				</div>
-			</div>
-			<div id="box_bottom">
-				<a href="#"><img src="{% static 'img/tg0591_falsh23.jpg' %}"></a>
-				<a href="#"><img src="{% static 'img/tg0591_falsh24.jpg' %}"></a>
-				<a href="#"><img src="{% static 'img/tg0591_falsh25.jpg' %}"></a>
-				<a href="#"><img src="{% static 'img/tg0591_falsh22.jpg' %}"></a>
-			</div>
-		</div>
-		<!--礼品箱包结束-->
 		<!--图开始-->
 		<div id="BigImg"></div>
 		<!--图结束-->
+
 		<!--厨房、办公开始-->
 		<div id="work">
 			<div id="work_left">
@@ -1739,56 +1747,7 @@
 			</div>
 		</div>
 		<!--服饰鞋帽结束-->
-		<!--个护化妆开始-->
-		<div id="dress">
-			<div id="dress_top">
-				<h1>个护化妆<span>Brand Promotions</span> </h1>
-				<div id="dress_top_a">
-					<span><a href="#">面部护理</a></span>
-					<span><a href="#">身体护理</a></span>
-					<span><a href="#">口腔护理</a></span>
-					<span><a href="#">女性护理</a></span>
-					<span><a href="#">魅力彩妆</a></span>
-					<span><a href="#">香水SPA</a></span>
-					<span><a href="#">男士护理</a></span>
 
-				</div>
-			</div>
-			<div id="dress_bottom">
-				<div id="dressImg">
-					<a href="#"><img src="{% static 'img/tg0591_falsh37.jpg' %}" style="z-index: 20;"></a>
-					<a href="#"><img src="{% static 'img/tg0591_falsh36.jpg' %}"></a>
-					<a href="#"><img src="{% static 'img/tg0591_falsh35.jpg' %}"></a>
-					<a href="#"><img src="{% static 'img/tg0591_falsh34.jpg' %}"></a>
-
-				</div>
-
-				<div id="dress_list">
-					<dl>
-						<dt><img src="{% static 'img/midP20130125140233185.jpg' %}"></dt>
-						<dd>高露洁360健康牙龈牙膏140g<br>双支装送Hello Kitty杯（限</dd>
-						<dd><span>￥29元</span></dd>
-					</dl>
-					<dl>
-						<dt><img src="{% static 'img/midP20130424142002630.jpg' %}"></dt>
-						<dd>潘婷Clinicare染烫损伤修护<br>组合优惠装（洗发露267ML+</dd>
-						<dd><span>￥47元</span></dd>
-					</dl>
-					<dl>
-						<dt><img src="{% static 'img/midP20130131100901989.jpg' %}"></dt>
-						<dd>松下（Panasonic）ES-RC50<br>-S 电动剃须刀</dd>
-						<dd><span>￥299元</span></dd>
-					</dl>
-					<dl>
-						<dt><img src="{% static 'img/midP20130424133451693.jpg' %}"></dt>
-						<dd>潘婷丝质顺滑洗发露400ml+<br>精华素200ml</dd>
-						<dd><span>￥37元</span></dd>
-					</dl>
-
-				</div>
-			</div>
-		</div>
-		<!--个护化妆结束-->
 		<!--时装秀图片开始-->
 		<div id="showImg"></div>
 		<!--时装秀图片结束-->

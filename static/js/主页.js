@@ -68,46 +68,48 @@ $(function() {
 	li.click(function() {
 		$(this).removeClass().addClass("active").siblings().removeClass();
 	})
-	$.get("../json/miaosha.json", function(data) {
-		for(var i = 0; i < data.length; i++) {
-			var obj = data[i];
-			var dl = $("<dl class='shoping_phone'></dl>");
-			var img = $("<img>");
-			var a = $("<a></a>");
-			imgsrc = "{% static '" + obj.img + "' %}"
-			img.attr("src", imgsrc);
-			console.log(imgsrc)
-			var dt = $("<dt></dt>");
-			var dd1 = $("<dd class='phone_title'>" + obj.content + "</dd>");
-			var dd2 = $("<dd>" + obj.sore + "</dd>");
-			var span = $("<span>" + obj.price + "</span>")
-			var strong = $("<strong>" + obj.mark + "</strong>");
-			var dd3 = $("<dd>" + obj.miao + "</dd>");
-			a.append(img);
-			dt.append(a);
-			dd2.append(span, strong);
-			dl.append(dt, dd1, dd2, dd3);
-			$("#shoping_left").append(dl);
-		}
-		var length = $(".shoping_phone a img").length;
-		console.log(length);
-		$(".shoping_phone a img").eq(0).click(function() {
-			location.href = "/showdetails/";
-		})
-		$(".shoping_phone a img").eq(1).click(function() {
-			location.href = "商品详情2.html";
-		})
-		$(".shoping_phone a img").eq(2).click(function() {
-			location.href = "商品详情3.html";
-		})
-		$(".shoping_phone a img").eq(3).click(function() {
-			location.href = "商品详情4.html";
-		})
-	})
+
+
+	// $.get("../json/miaosha.json", function(data) {
+	// 	for(var i = 0; i < data.length; i++) {
+	// 		var obj = data[i];
+	// 		var dl = $("<dl class='shoping_phone'></dl>");
+	// 		var img = $("<img>");
+	// 		var a = $("<a></a>");
+	// 		imgsrc = "{% static '" + obj.img + "' %}"
+	// 		img.attr("src", imgsrc);
+	// 		console.log(imgsrc)
+	// 		var dt = $("<dt></dt>");
+	// 		var dd1 = $("<dd class='phone_title'>" + obj.content + "</dd>");
+	// 		var dd2 = $("<dd>" + obj.sore + "</dd>");
+	// 		var span = $("<span>" + obj.price + "</span>")
+	// 		var strong = $("<strong>" + obj.mark + "</strong>");
+	// 		var dd3 = $("<dd>" + obj.miao + "</dd>");
+	// 		a.append(img);
+	// 		dt.append(a);
+	// 		dd2.append(span, strong);
+	// 		dl.append(dt, dd1, dd2, dd3);
+	// 		$("#shoping_left").append(dl);
+	// 	}
+	// 	var length = $(".shoping_phone a img").length;
+	// 	console.log(length);
+	// 	$(".shoping_phone a img").eq(0).click(function() {
+	// 		location.href = "/showdetails/";
+	// 	})
+	// 	$(".shoping_phone a img").eq(1).click(function() {
+	// 		location.href = "商品详情2.html";
+	// 	})
+	// 	$(".shoping_phone a img").eq(2).click(function() {
+	// 		location.href = "商品详情3.html";
+	// 	})
+	// 	$(".shoping_phone a img").eq(3).click(function() {
+	// 		location.href = "商品详情4.html";
+	// 	})
+	// })
 
 })
 
-//创建手机列表
+//创建手机列表 用于手机数码模块
 $(function() {
 	$.get("json/phone.json", function(data) {
 		for(var i = 0; i < data.length; i++) {
@@ -171,29 +173,6 @@ $(function() {
 	}
 });
 
-//礼品箱包轮播图
-$(function() {
-	var index = 0;
-	var len = $("#box_bottom").find("a").length;
-
-	var timer = setInterval(function() {
-		index++;
-		show();
-	}, 3000);
-
-	function show() {
-		if(index == len) {
-			index = 0;
-		} else if(index < 0) {
-			index = len - 1;
-		}
-		$("#box_bottom").find("a").eq(index).animate({
-			opacity: 1
-		}).siblings().animate({
-			opacity: 0
-		});
-	}
-})
 
 // 厨房用具轮播图
 $(function() {
@@ -260,30 +239,6 @@ $(function() {
 			i = len - 1;
 		}
 		$("#bottom_left").find("a").eq(i).animate({
-			opacity: 1
-		}).siblings().animate({
-			opacity: 0
-		});
-	}
-})
-
-//个护化妆轮播图
-$(function() {
-	var index = 0;
-	var len = $("#dressImg").find("a").length;
-
-	var timer = setInterval(function() {
-		index++;
-		show();
-	}, 4000);
-
-	function show() {
-		if(index == len) {
-			index = 0;
-		} else if(index < 0) {
-			index = len - 1;
-		}
-		$("#dressImg").find("a").eq(index).animate({
 			opacity: 1
 		}).siblings().animate({
 			opacity: 0
