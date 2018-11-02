@@ -24,41 +24,21 @@ $(function() {
 })
 
 //导航轮播图
-$(function() {
-	var len = $(".slider li").length;
-	var index = 0;
-	var timer = setInterval(function() {
-		index++;
-		show();
-	}, 3000);
+$(function () {
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        spaceBetween: 30,
+        paginationClickable: true,
+        loop: true,
 
-	$("#slider_tab li").mouseenter(function() {
-		clearInterval(timer);
-		var i = $(this).index();
-		index = i;
-		show();
-	});
-	$("#slider_tab li").mouseleave(function() {
-		timer = setInterval(function() {
-			index++;
-			show();
-		}, 3000);
-	})
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
 
-	function show() {
-		if(index == len) {
-			index = 0;
-		} else if(index < 0) {
-			index = len - 1;
-		}
-		$(".slider").find("li").eq(index).animate({
-			opacity: 1
-		}).siblings().animate({
-			opacity: 0
-		});
-		$("#slider_tab").find("li").eq(index).addClass("tab").siblings().removeClass("tab");
-	};
+        centeredSlides: true,
 
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
 })
 
 //商品秒杀
@@ -69,90 +49,19 @@ $(function() {
 		$(this).removeClass().addClass("active").siblings().removeClass();
 	})
 
-
-	// $.get("../json/miaosha.json", function(data) {
-	// 	for(var i = 0; i < data.length; i++) {
-	// 		var obj = data[i];
-	// 		var dl = $("<dl class='shoping_phone'></dl>");
-	// 		var img = $("<img>");
-	// 		var a = $("<a></a>");
-	// 		imgsrc = "{% static '" + obj.img + "' %}"
-	// 		img.attr("src", imgsrc);
-	// 		console.log(imgsrc)
-	// 		var dt = $("<dt></dt>");
-	// 		var dd1 = $("<dd class='phone_title'>" + obj.content + "</dd>");
-	// 		var dd2 = $("<dd>" + obj.sore + "</dd>");
-	// 		var span = $("<span>" + obj.price + "</span>")
-	// 		var strong = $("<strong>" + obj.mark + "</strong>");
-	// 		var dd3 = $("<dd>" + obj.miao + "</dd>");
-	// 		a.append(img);
-	// 		dt.append(a);
-	// 		dd2.append(span, strong);
-	// 		dl.append(dt, dd1, dd2, dd3);
-	// 		$("#shoping_left").append(dl);
-	// 	}
-	// 	var length = $(".shoping_phone a img").length;
-	// 	console.log(length);
-	// 	$(".shoping_phone a img").eq(0).click(function() {
-	// 		location.href = "/showdetails/";
-	// 	})
-	// 	$(".shoping_phone a img").eq(1).click(function() {
-	// 		location.href = "商品详情2.html";
-	// 	})
-	// 	$(".shoping_phone a img").eq(2).click(function() {
-	// 		location.href = "商品详情3.html";
-	// 	})
-	// 	$(".shoping_phone a img").eq(3).click(function() {
-	// 		location.href = "商品详情4.html";
-	// 	})
-	// })
-
-})
-
-//创建手机列表 用于手机数码模块
-$(function() {
-	$.get("json/phone.json", function(data) {
-		for(var i = 0; i < data.length; i++) {
-			var obj = data[i];
-			var ul = $("<ul></ul>");
-			var li = $("<li></li>");
-			var a1 = $("<a></a>");
-			var img = $("<img>");
-			img.attr("src", obj.img);
-			var p = $("<p></p>");
-			var a2 = $("<a>" + obj.content + "</a>");
-			var b = $("<b>" + obj.price + "</b>");
-			a1.append(img);
-			p.append(a2);
-			li.append(a1, p, b);
-			ul.append(li);
-			$("#phone_list").append(ul);
-
-		}
-	});
-	// 会员促销鼠标划过
-	$("#sale_bottom img").mouseenter(function() {
+    $('.shoping_phone').find('img').mouseenter(function() {
 		$(this).css("opacity", "0.6").siblings().css("opacity", "1");
 	})
-	$("#sale_bottom img").mouseleave(function() {
+	$('.shoping_phone').find('img').mouseleave(function() {
 		$(this).css("opacity", "1");
 	})
 })
 
+
+
 // 手机数码轮播图
 $(function() {
-	var len = null;
-	$.get("json/shumalunbo.json", function(data) {
-		for(var i = 0; i < data.length; i++) {
-			var str = data[i];
-			var a = $("<a></a>");
-			var Img = $("<img>");
-			Img.attr("src", str.img);
-			a.append(Img);
-			$("#bigImg").append(a);
-		}
-		len = $("#bigImg").find("a").length;
-	});
+	var len = $("#bigImg").find("a").length;
 	var index = 0;
 	var timer = setInterval(function() {
 		index++;

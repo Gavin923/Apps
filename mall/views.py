@@ -2,12 +2,20 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from mall.models import User
+from mall.models import User, Miaosha, Wrapper
 
 
 def index(request):
     username = request.COOKIES.get('username')
-    return render(request, '天狗商城.html', context={'username':username})
+
+    miaoshalist = Miaosha.objects.all()
+    wrapperlist = Wrapper.objects.all()
+
+    return render(request, '天狗商城.html', context={
+        'username':username,
+        'miaoshalist':miaoshalist,
+        'wrapperlist':wrapperlist,
+    })
 
 def register(request):
     if request.method == 'GET':
@@ -49,9 +57,13 @@ def logout(request):
     return response
 
 
-def showdetails(request):
+def showdetails(request, num=1):
+    goods = Miaosha.objects.all().get(id=num)
     username = request.COOKIES.get('username')
-    return render(request, '商品详情1.html', context={'username':username})
+    return render(request, '商品详情1.html', context={
+        'username':username,
+        'goods':goods,
+    })
 
 
 def cart(request):

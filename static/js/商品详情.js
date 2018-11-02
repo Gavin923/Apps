@@ -27,8 +27,8 @@ $(function() {
 	var _smallArea = $("#smallArea");
 	var _bigImg = $("#bigimg");
 	var _bigArea = $("#bigArea");
-	_smallArea.width(_smallImg.width() / _bigImg.width() * _bigArea.width());
-	_smallArea.height(_smallImg.height() / _bigImg.height() * _bigArea.height());
+	_bigArea.width(_smallArea.width() / _smallImg.width() * _bigImg.width());
+	_bigArea.height(_smallArea.height() / _smallImg.height() * _bigImg.height());
 	var suv = _bigImg.width() / _smallImg.width();
 	_smallImg.mousemove(function(e) {
 		_smallArea.show();

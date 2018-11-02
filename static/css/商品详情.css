@@ -79,17 +79,16 @@
 	margin-left: 10px;
 }
 #smallimg {
-	width: 280px;
-	height: 295px;
-	background: url(../img/maxP20160313145249235.jpg) center;
+	width: 260px;
+	height: 280px;
 	background-size: cover;
 	position: relative;
 	left: 20px;
 	top:10px;
 }
 #smallArea {
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	background: rgba(36, 255, 253, 0.3);
 	position: absolute;
 	left: 20px;
@@ -97,21 +96,21 @@
 	overflow: hidden;
 }
 #bigArea {
-	width: 280px;
-	height: 299px;
+	width: 260px;
+	height: 280px;
 	position: absolute;
 	left:300px;
-	top:10px;
+	top:30px;
 	display: none;
-	border: 1px solid #000000;
+	border: 1px solid #999;
 	overflow: hidden;
 }
 #bigimg {
 	position: absolute;
 	top:0;
 	left:0;
-	width: 300px;
-	height: 300px;
+	width: 480px;
+	height: 510px;
 }
 .xuanxiang {
 	width: 610px;

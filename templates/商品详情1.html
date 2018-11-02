@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
 
@@ -182,25 +183,33 @@
                 <!--商平图片展示-->
 				<div id="nav_msg">
 					<div id="smallimg">
-						<div id="smallArea" style="width: 166.809px; height: 173.632px;"></div>
+                        <img src="{% static goods.maximg %}" alt="">
+						<div id="smallArea"></div>
 					</div>
 					<div id="bigArea" style="">
-						<img id="bigimg" src="{% static 'img/hdP20160313145249235.jpg' %}" style="width: 470px;height: 508px;;">
+{#						<img id="bigimg" src="{% static 'img/hdP20160313145249235.jpg' %}" style="width: 470px;height: 508px;;">#}
+                        <img id="bigimg" src="{% static goods.hdimg %}">
 					</div>
 				</div>
                 <!--商平详情展示-->
 				<ul class="xuanxiang">
 					<li>
-						<h1>  三星S6 9208 金，金属边框&amp;玻璃机身，0.7秒快速启动相机、快速充电！</h1>
+						<h1>{{ goods.content }}</h1>
 					</li>
 					<li>商品编号：P20160313145249235
 					</li>
 					<li>商品简介：
 					</li>
-					<li>价 格：<span class="price">￥4668</span> </li>
+					<li>价 格：<span class="price">{{ goods.price }}</span> </li>
 					<li>商城价格：<strong class="sprice">￥3735</strong> </li>
 					<li class="borli">
-						<span>颜色：<em id="颜色_金色" |="">金色</em></span>
+                        <span>颜色：
+                            <em id="颜色_金" |="" class="">金色</em>
+                            <em id="颜色_白" |="" class="">白色</em>
+                            <em id="颜色_粉红色" |="" class="">粉红色</em>
+                            <em id="颜色_银" |="" class="">银色</em>
+                        </span>
+
 						<span>我 要 买：
                                 <input name="txtNum" id="txtNum" type="text" value="1" style="width: 80px;">
                                 个 <b>(下订单后立即发货)</b> </span>
@@ -335,7 +344,7 @@
                             <h3><a href="#">手机扫二维码登录</a></h3>
                         </li>
                         <li style="float: right;">
-                            <a href="#"><img src="{% static 'undefined' %}"></a>
+{#                            <a href="#"><img src="{% static 'undefined' %}"></a>#}
                         </li>
                     </ul>
                 </div>

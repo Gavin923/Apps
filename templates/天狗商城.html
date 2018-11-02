@@ -4,10 +4,13 @@
 
 	<head>
 		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<title>天狗商城</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/swiper.min.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
 		<link rel="stylesheet" type="text/css" href="{% static 'css/主页.css' %}" />
 		<script src="{% static 'js/jquery-3.1.0.js' %}"></script>
+        <script src="{% static 'js/swiper.min.js' %}"></script>
 		<script src="{% static 'js/jquery.cookie.js' %}"></script>
 		<script src="{% static 'js/主页.js' %}"></script>
 	</head>
@@ -41,6 +44,7 @@
 			</div>
 		</div>
 		<!--顶部结束-->
+
 		<!--logo开始-->
 		<div id="logo">
 			<div id="logo_tu">
@@ -131,7 +135,7 @@
 
 		<!--导航栏2开始-->
 		<div id="nav2">
-			<div id="nav2_sd"></div>
+{#			<div id="nav2_sd"></div>#}
 			<div class="sideNav">
 				<div class="navList">
 					<h3 class="icon_11"><a href="#">家用电器</a></h3>
@@ -1470,43 +1474,29 @@
 						</div>
 					</ul>
 				</div>
-				<div class="navList" style="height: 35px;">
-
-					<a href="#"></a>
-
-				</div>
 			</div>
 
-			<div id="iFocus">
-				<ul class="slider">
-					<li style="background: url({% static 'img/tg0591_falsh0.jpg' %}) 50% 50% no-repeat;"></li>
-					<li style="background: url({% static 'img/tg0591_falsh1.jpg' %}) 50% 50% no-repeat;"></li>
-					<li style="background: url({% static 'img/tg0591_falsh2.jpg' %}) 50% 50% no-repeat;"></li>
-					<li style="background: url({% static 'img/tg0591_falsh3.jpg' %}) 50% 50% no-repeat;"></li>
-				</ul>
-
-				<ul id="slider_tab">
-					<li class="tab"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
-			<div id="banner">
-				<a href="#">
-					<img src="{% static 'img/tg0591_falsh4.gif' %}">
-				</a>
-				<a href="#">
-					<img src="{% static 'img/tg0591_falsh4.gif' %}">
-				</a>
-				<a href="#">
-					<img src="{% static 'img/tg0591_falsh4.gif' %}">
-				</a>
-			</div>
-
+            <!--轮播图开始-->
+            <div id="iFocus">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {% for wrapper in wrapperlist %}
+                        <div class="swiper-slide">
+                            <img src="{% static wrapper.img %}" alt="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
 		</div>
-
+        </div>
 		<!--导航栏2结束-->
+
 		<!--商标图片开始-->
 		<div id="smallImg">
 			<a href="#"><img src="{% static 'img/p201406071435494008.jpg' %}"></a>
@@ -1529,34 +1519,22 @@
 					<li>人气特卖</li>
 					<li>今日抢购</li>
 				</ul>
-{#                <dl class=shoping_phone>#}
-{#	                <dt>#}
-{#		                <a href="{% url 'mall:showdetails' %}">#}
-{#                            <img src="{% static 'img/midP20160313145249235.jpg' %}"/>#}
-{#                        </a>#}
-{#                    </dt>#}
-{#	                <dd class="phone_title">content</dd>#}
-{#	                <dd>#}
-{#                        score#}
-{#                        <span>price</span>#}
-{#                        <strong>mark</strong>#}
-{#                    </dd>#}
-{#	                <dd>miao</dd>#}
-{#                </dl>#}
-                <dl class=shoping_phone>
-	                <dt>
-		                <a href="{% url 'mall:showdetails' %}">
-                            <img src="{% static 'img/midP20160313145249235.jpg' %}"/>
-                        </a>
-                    </dt>
-	                <dd class="phone_title">三星S6 9208 金，金属边框&玻璃机身，0.7秒快速启动...</dd>
-	                <dd>
-                        抢购价格
-                        <span>￥3735</span>
-                        <strong>元</strong>
-                    </dd>
-	                <dd>秒杀已结束</dd>
-                </dl>
+
+                {% for miaosha in miaoshalist  %}
+                    <dl class=shoping_phone>
+                        <dt>
+                            <a href="{% url 'mall:showdetails' miaosha.id %}">
+                                <img src="{% static miaosha.img %}"/>
+                            </a>
+                        </dt>
+                        <dd class="phone_title">{{ miaosha.content }}</dd>
+                        <dd>
+                            抢购价格:<span>{{ miaosha.price }}</span>
+                            <strong>元</strong>
+                        </dd>
+                        <dd>{{ miaosha.miao }}</dd>
+                    </dl>
+                {% endfor %}
 			</div>
 			<div id="shoping_right">
 				<img src="{% static 'img/tg0591_falsh22.jpg' %}" style="width: 235px;height: 300px;">
@@ -1593,15 +1571,87 @@
 				</div>
 			</div>
 			<div id="numerical_bottom">
-				<div id="bigImg"></div>
+				<div id="bigImg">
+                    <a style="opacity: 0;"><img src="{% static 'img/zmgd888_falsh20.jpg' %}"></a>
+					<a style="opacity: 0;"><img src="{% static 'img/tg0591_falsh7.jpg' %}"></a>
+					<a style="opacity: 1;"><img src="{% static 'img/tg0591_falsh19.jpg' %}"></a>
+					<a style="opacity: 0;"><img src="{% static 'img/tg0591_falsh46.jpg' %}"></a>
+                </div>
 				<div id="phone_list">
-
+                    <ul>
+						<li>
+							<a><img src="{% static 'img/midP20160313145249235.jpg' %}"></a>
+							<p>
+								<a>魅族 MX4 16GB 灰色 移动4G手机</a>
+							</p><b>￥999元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316132640993.jpg' %}"></a>
+							<p>
+								<a>魅族 PR05 64GB 银白色 移动联通双4G手机 双卡双待</a>
+							</p><b>￥3099元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316133300714.jpg' %}"></a>
+							<p>
+								<a>Huawei/华为 Mate8全网通</a>
+							</p><b>￥3699元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316133759283.jpg' %}"></a>
+							<p>
+								<a>Huawei/华为 荣耀畅玩5X</a>
+							</p><b>￥1599元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316134241222.jpg' %}"></a>
+							<p>
+								<a>分期免息送16G卡皮套钢化膜Huawei/华为 荣耀7全网通4G</a>
+							</p><b>￥2469元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316135002531.jpg' %}"></a>
+							<p>
+								<a>Huawei/华为 P8青春版 电信移动 联通 双4G智能手机双</a>
+							</p><b>￥1388元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316135451288.jpg' %}"></a>
+							<p>
+								<a>Huawei/华为 P8标准版双4G手机</a>
+							</p><b>￥2288元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316135827379.jpg' %}"></a>
+							<p>
+								<a>送32G/电源耳机皮套 Huaw<br>ei/华为 荣耀畅玩4C手机</a>
+							</p><b>￥799元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20160316135827379.jpg' %}"></a>
+							<p>
+								<a>Huawei/华为 荣耀6 移动联<br>通 4G智能手机</a>
+							</p><b>￥1599元</b></li>
+					</ul>
+					<ul>
+						<li>
+							<a><img src="{% static 'img/midP20130125170822435.jpg' %}"></a>
+							<p>
+								<a>索尼(SONY) NEX-F3K 微单<br>单镜套机 粉色(E18-55mm F)</a>
+							</p><b>￥3370元</b></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-
 		<!--手机数码结束-->
-
 
 		<!--图开始-->
 		<div id="BigImg"></div>
@@ -1666,6 +1716,7 @@
 			</div>k
 		</div>
 		<!--厨房、办公结束-->
+
 		<!--服饰鞋帽开始-->
 		<div id="clothes">
 			<div id="clothes_top">
@@ -1847,6 +1898,7 @@
 			</ul>
 		</div>
 		<!--热门商品开始-->
+
 		<!--footerbg开始-->
 		<div id="footerbg">
 			<div id="friendlik">
@@ -1965,7 +2017,7 @@
 							<h3><a href="#">手机扫二维码登录</a></h3>
 						</li>
 						<li style="float: right;">
-							<a href="#"><img src="{% static 'undefined' %}"></a>
+{#							<a href="#"><img src="{% static 'undefined' %}"></a>#}
 						</li>
 					</ul>
 				</div>
@@ -1974,7 +2026,6 @@
 		<!--footerbg结束-->
 		<div id="footer">
 			天狗网络科技有限公司版权所有<br> 站长统计
-
 		</div>
 
 	</body>

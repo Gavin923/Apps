@@ -1,20 +1,20 @@
 $(function() {
-	//用户名显示
-	var a = $.cookie("loginUser");
-	console.log(a);
-	if(a) {
-		$("#p").html("您好：" + a + "用户！" + "<a class='exit'>退出</a>");
-	} else {
-		$("#p").html();
-	}
-	$(".exit").click(function() {
-		$(this).css("cursor", "pointer")
-		$.cookie("loginUser", "", {
-			expires: 20,
-			path: "/"
-		})
-		window.location.reload();
-	})
+	// //用户名显示
+	// var a = $.cookie("loginUser");
+	// console.log(a);
+	// if(a) {
+	// 	$("#p").html("您好：" + a + "用户！" + "<a class='exit'>退出</a>");
+	// } else {
+	// 	$("#p").html();
+	// }
+	// $(".exit").click(function() {
+	// 	$(this).css("cursor", "pointer")
+	// 	$.cookie("loginUser", "", {
+	// 		expires: 20,
+	// 		path: "/"
+	// 	})
+	// 	window.location.reload();
+	// })
 
 	//商品列表移入移出
 	$("#nav_feiLei").mouseenter(function() {
