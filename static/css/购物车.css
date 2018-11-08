@@ -24,6 +24,38 @@
 	vertical-align: inherit;
 	border-color: inherit;
 }
+#shopCart table tbody tr{
+	height: 60px;
+	vertical-align: center;
+}
+#shopCart .trnum .info{
+	/*line-height: 60px;*/
+	font-size: 16px;
+	text-align: left;
+	overflow: hidden;
+}
+#shopCart .trnum .info img{
+	float: left;
+}
+#shopCart .trnum .info div{
+	float: left;
+}
+#shopCart .trnum .price{
+	font-weight: bold;
+}
+#shopCart .trnum .b{
+	color: rgb(217, 0, 0);
+}
+#shopCart .trnum .num{
+	width: 60px;
+	height: 20px;
+	border: 1px solid
+	rgb(204, 204, 204);
+}
+#shopCart .trnum .str{
+	color: rgb(217, 0, 0);
+}
+
 
 #shopCart table th {
 	background: #f1f1f1;

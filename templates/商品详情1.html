@@ -196,12 +196,12 @@
 					<li>
 						<h1>{{ goods.content }}</h1>
 					</li>
-					<li>商品编号：P20160313145249235
+					<li>商品编号：{{ goods.no }}
 					</li>
-					<li>商品简介：
+					<li>商品简介：{{ goods.content }}
 					</li>
-					<li>价 格：<span class="price">{{ goods.price }}</span> </li>
-					<li>商城价格：<strong class="sprice">￥3735</strong> </li>
+					<li>价 格：<span class="sprice">￥{{ goods.sprice }}</span> </li>
+					<li>商城价格：<strong class="price">￥{{ goods.price }}</strong> </li>
 					<li class="borli">
                         <span>颜色：
                             <em id="颜色_金" |="" class="">金色</em>

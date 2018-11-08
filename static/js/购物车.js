@@ -57,7 +57,8 @@ $(function() {
 			var td1 = $("<td></td>");
 			var p = $("<p></p>");
 			var img = $("<img>");
-			img.attr("src", goods.img);
+			imgsrc = "/static/"+ goods.img;
+			img.attr("src", imgsrc);
 			img.css("float", "left");
 			var avt = $("<a>" + goods.name + ",颜色：" + goods.color + "</a>");
 			p.append(img, avt);

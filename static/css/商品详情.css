@@ -94,6 +94,7 @@
 	left: 20px;
 	top:30px;
 	overflow: hidden;
+    display: none;
 }
 #bigArea {
 	width: 260px;
@@ -140,6 +141,9 @@
 	color: #e22a25;
 	font-style: normal;
 	font-weight: normal;
+}
+.xuanxiang li .sprice{
+    text-decoration: line-through;
 }
 .borli {
 	padding: 7px;

@@ -38,8 +38,8 @@
 				</div>
 			</div>
 		</div>
+        <!--顶部结束-->
 
-		<!--顶部结束-->
 		<!--logo开始-->
 		<div id="logo">
 			<div id="logo_tu">
@@ -151,6 +151,26 @@
                             <a href="{% url 'mall:index' %}" style="color: #ff0000;">挑选商品</a>
                         </td>
                     </tr>
+                    <tr class="trnum">
+                        <td>
+                            <div class="info">
+                                <img src="{% static 'img/minP20160313145249235.jpg' %}">
+                                <div>
+                                    <p>Apple iPhone 6 Plus(A1524) 16GB金色 移动联通电...,</p>
+                                    <p>颜色：白色</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="price">￥4888</td>
+                        <td><b class="b">￥3735</b></td>
+                        <td>
+                            <a class="a_left">-</a>
+                            <input class="num" value="1" readonly="readonly">
+                            <a class="a_right">+</a>
+                        </td>
+                        <td><strong class="str">￥3735</strong></td>
+                        <td><a class="art" style="cursor: pointer;">取消订购</a></td>
+                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
@@ -181,139 +201,137 @@
             </table>
         </div>
 
-			<!--footerbg开始-->
-			<div id="footerbg">
-				<div id="friendlik">
-					<strong>友情链接：</strong>
-					<a href="#">天狗网商城</a>
-					<a href="#">介休市弘盛昌家具建材装饰城</a>
-					<a href="#">介休鸿宪居装饰公司</a>
-					<a href="#">介休家具建材网</a>
-					<a href="#">天狗网络科技有限公司</a>
-					<a href="#">天狗网络科技自助建站系统</a>
-					<a href="#">天狗网上商城</a>
-					<a href="#">涛涛三味火锅餐饮有限公司</a>
-				</div>
-				<div id="con">
-					<div id="con_left">
-						<ul>
-							<li>
-								<img src="{% static 'img/tel.jpg' %}"> "客服服务热线"
-								<div id="pong">
-									03547357121 13383445351
-									<br>
-									<a href="#"><img src="{% static 'img/T1FXHXXahjXXXAK3zo-77-18.gif' %}"></a>
-								</div>
-								<span>(7*24小时服务)</span>
-							</li>
-							<li>
-								<a href="#"><img src="{% static 'img/button_111.gif' %}"></a>
-							</li>
-						</ul>
-					</div>
-					<div id="con_right">
-						<span id="boottom_help">
+        <!--footerbg开始-->
+        <div id="footerbg">
+            <div id="friendlik">
+                <strong>友情链接：</strong>
+                <a href="#">天狗网商城</a>
+                <a href="#">介休市弘盛昌家具建材装饰城</a>
+                <a href="#">介休鸿宪居装饰公司</a>
+                <a href="#">介休家具建材网</a>
+                <a href="#">天狗网络科技有限公司</a>
+                <a href="#">天狗网络科技自助建站系统</a>
+                <a href="#">天狗网上商城</a>
+                <a href="#">涛涛三味火锅餐饮有限公司</a>
+            </div>
+            <div id="con">
+                <div id="con_left">
+                    <ul>
+                        <li>
+                            <img src="{% static 'img/tel.jpg' %}"> "客服服务热线"
+                            <div id="pong">
+                                03547357121 13383445351
+                                <br>
+                                <a href="#"><img src="{% static 'img/T1FXHXXahjXXXAK3zo-77-18.gif' %}"></a>
+                            </div>
+                            <span>(7*24小时服务)</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{% static 'img/button_111.gif' %}"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="con_right">
+                    <span id="boottom_help">
 
-		  				<ul>
-		  					<li>
-		  						<img src="{% static 'img/gu0.jpg' %}">
-		  						<h3>关于我们</h3>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">货源提供</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">联系客服</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">商城简介</a>
-		  					</li>
-		  				</ul>
-		  				<ul>
-		  					<li>
-		  						<img src="{% static 'img/gu1.jpg' %}">
-		  						<h3>售后服务</h3>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">产品退换</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">订单查询</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">收货说明</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">在线旺旺客服</a>
-		  					</li>
-		  				</ul>
-		  				<ul>
-		  					<li>
-		  						<img src="{% static 'img/gu2.jpg' %}">
-		  						<h3>支付宝</h3>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">支付宝</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">货到付款</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">银行付款</a>
-		  					</li>
-		  				</ul>
-		  				<ul>
-		  					<li>
-		  						<img src="{% static 'img/gu3.jpg' %}">
-		  						<h3>购物指南</h3>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">购物流程</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">常见问题</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">会员注册</a>
-		  					</li>
-		  				</ul>
-		  				<ul>
-		  					<li>
-		  						<img src="{% static 'img/gu4.jpg' %}">
-		  						<h3>配送方式</h3>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">运费标准</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">配送政策</a>
-		  					</li>
-		  					<li class="mar">
-		  						<a href="#">订单说明</a>
-		  					</li>
-		  				</ul>
-		  			</span>
-						<ul>
-							<li style="width: 140px;float: left;">
-								<img src="{% static 'img/wx.jpg' %}">
-								<h3><a href="#">手机扫二维码登录</a></h3>
-							</li>
-							<li style="float: right;">
+                    <ul>
+                        <li>
+                            <img src="{% static 'img/gu0.jpg' %}">
+                            <h3>关于我们</h3>
+                        </li>
+                        <li class="mar">
+                            <a href="#">货源提供</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">联系客服</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">商城简介</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="{% static 'img/gu1.jpg' %}">
+                            <h3>售后服务</h3>
+                        </li>
+                        <li class="mar">
+                            <a href="#">产品退换</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">订单查询</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">收货说明</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">在线旺旺客服</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="{% static 'img/gu2.jpg' %}">
+                            <h3>支付宝</h3>
+                        </li>
+                        <li class="mar">
+                            <a href="#">支付宝</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">货到付款</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">银行付款</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="{% static 'img/gu3.jpg' %}">
+                            <h3>购物指南</h3>
+                        </li>
+                        <li class="mar">
+                            <a href="#">购物流程</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">常见问题</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">会员注册</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="{% static 'img/gu4.jpg' %}">
+                            <h3>配送方式</h3>
+                        </li>
+                        <li class="mar">
+                            <a href="#">运费标准</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">配送政策</a>
+                        </li>
+                        <li class="mar">
+                            <a href="#">订单说明</a>
+                        </li>
+                    </ul>
+                </span>
+                    <ul>
+                        <li style="width: 140px;float: left;">
+                            <img src="{% static 'img/wx.jpg' %}">
+                            <h3><a href="#">手机扫二维码登录</a></h3>
+                        </li>
+                        <li style="float: right;">
 {#								<a href="#"><img src="{% static 'undefined' %}"></a>#}
-							</li>
-						</ul>
-					</div>
+                        </li>
+                    </ul>
+                </div>
 
-				</div>
-			</div>
-			<!--footerbg结束-->
-			<div id="footer">
-				天狗网络科技有限公司版权所有<br> 站长统计
+            </div>
+        </div>
+        <!--footerbg结束-->
+        <div id="footer">
+            天狗网络科技有限公司版权所有<br> 站长统计
 
-			</div>
+        </div>
 
-
-</div>
     </body>
 
 </html>
